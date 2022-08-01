@@ -1,0 +1,78 @@
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    padding: 10px 100px;
+}
+
+.add-popup {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.numberLabel {
+    color: black;
+    margin: auto 20px;
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.add-popup button {
+    border-radius: 1rem;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background-color: white;
+    font-size: 1.5rem;
+    margin-top: 10%;
+    border: none;
+}
+
+.add-popup button:hover {
+    background-color: #afafaf;
+    color: black;
+}
+
+.menu-img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.filter-container button {
+    margin-right: 2rem;
+    min-width: 5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: white;
+    color: orange;
+    border-radius: 1rem;
+    border: 2px solid orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filter-container button.active,
+button:hover {
+    background: orange;
+    color: white;
+}
+
+.filter-container {
+    padding: 20px 100px;
+}
